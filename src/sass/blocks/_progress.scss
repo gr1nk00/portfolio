@@ -1,0 +1,53 @@
+.progress {
+    min-height: 285px;
+    display: flex;
+    align-items: center;
+
+    &__wrapper {
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: 350px 350px;
+        grid-template-rows: repeat(2, 70px);
+        column-gap: 215px;
+        row-gap: 40px;
+    }
+
+    &__item {
+        display: grid;
+        grid-template: 21px 14px/ 200px 35px;
+        align-content: space-between;
+        justify-content: space-between;
+    }
+
+    &__title {
+        position: relative;
+        font-weight: 700;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 36px;
+            height: 36px;
+            border-radius: 100%;
+            background-color: $main-color;
+            position: absolute;
+            z-index: -1;
+            left: -7%;
+            top: -38%;
+        }
+    }
+
+    &__line--1 {
+        width: 350px;
+        height: 14px;
+        border-radius: 4px;
+        background: #E8E4DE;
+    }
+
+    &__line--2 {
+
+        height: 14px;
+        border-radius: 4px;
+        background: $main-color;
+    }
+}
