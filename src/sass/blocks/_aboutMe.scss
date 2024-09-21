@@ -1,0 +1,101 @@
+.aboutMe {
+    width: 100%;
+    min-height: 875px;
+    padding-top: 185px;
+    padding-bottom: 100px;
+
+    &__grid {
+        max-height: 455px;
+        display: grid;
+        grid-template-columns: 400px 570px;
+        grid-template-rows: repeat(2, minmax(245px, auto));
+        column-gap: 70px;
+        row-gap: 40px;
+        grid-template-areas:
+            "img me"
+            "img skills";
+    }
+
+    .skills {
+        display: grid;
+        grid-template-columns: 260px, 260px;
+        grid-template-rows: 115px;
+        grid-template-areas:
+            "1 2";
+        column-gap: 40px;
+
+        &__title {
+            font-weight: 700;
+        }
+
+        &__descr {
+            font-size: 12px;
+            width: 200px;
+        }
+
+        &__1 {
+            padding-left: 60px;
+            position: relative;
+
+            &::before {
+                content: '';
+                display: block;
+                width: 36px;
+                height: 36px;
+                border-radius: 100%;
+                background-color: $main-color;
+                position: absolute;
+                z-index: -1;
+                left: 0;
+            }
+        }
+
+        img {
+            position: absolute;
+            top: 15px;
+            left: 17px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        margin-bottom: 10px;
+        position: relative;
+        transform: translateX(10px);
+
+        &::before {
+            content: '';
+            display: block;
+            width: 36px;
+            height: 36px;
+            border-radius: 100%;
+            background-color: $main-color;
+            position: absolute;
+            transform: translate(-33%, -20%);
+            z-index: -1;
+        }
+    }
+
+    .line {
+        width: 60px;
+        height: 3px;
+        background-color: $main-color;
+        margin-bottom: 20px;
+    }
+
+    &__descr {
+        width: 570px;
+    }
+}
+
+#img {
+    grid-area: img;
+}
+
+#me {
+    grid-area: me;
+}
+
+#skills {
+    grid-area: skills;
+}
