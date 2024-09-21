@@ -1,0 +1,332 @@
+@media (max-width: 1200px)
+    .menu
+        &_link
+           padding-right: 20px
+           font-size: 13px
+    .promo
+        &_header
+            font-size: 50px
+    .advantages
+        .commission
+            .circle
+                margin: 25px 25px auto auto
+    .mobile
+        &_item
+            width: auto
+    .footer
+        &_media
+            &_item
+                width: 28px
+                height: 28px
+        &_mobile
+            width: 250px
+            img
+                width: 80px
+                height: 23px
+
+@media (max-width: 991px)
+    .menu
+        padding: 13px 0px
+        &_link
+            padding-right: 15pxs
+            font-size: 12px
+    .row
+        .subheader
+            &_logo
+                img
+                    width: 235px
+            &_phone
+                font-size: 20px
+            &_official
+                font-size: 12px
+            &_btn
+                margin-top: 21px
+                width: 145px
+                height: 40px   
+    .advantages
+        .description
+            text-align: center
+        .no_cash
+            flex-direction: column
+            align-items: center
+            .circle
+                margin: auto auto
+        .commission
+            flex-direction: column
+            .circle
+                margin: auto auto
+        .guaranteed
+            flex-direction: column
+            .circle
+                margin: auto auto
+        .schedule
+            flex-direction: column
+            .circle
+                margin: auto auto
+        .comfortable
+            flex-direction: column
+            .circle
+                margin: auto auto
+        .orders
+            flex-direction: column
+            .circle
+                margin: auto auto
+        .call
+            flex-direction: column
+            .circle
+                margin: auto auto
+        .no_posters
+            flex-direction: column
+            .circle
+                margin: auto auto
+
+    .uberX
+        img
+            width: 100%
+    .footer
+        &_media
+            width: 135px
+            top: 95px
+            &_item
+                width: 25px
+                height: 25px
+        &_mobile
+            top: 100px
+            width: 200px
+            img
+                width: 65px
+                height: 20px
+@media (max-width: 767px)
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        background-color: rgba(0,0,0, .7)
+        transition: 0.8 s
+        &_active
+            left: 0
+        &_item
+            margin-top: 7px
+            padding-right: 0
+            border: none
+        &_link
+            font-size: 17px
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 25px
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #ffff
+            margin-bottom: 4px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .xs-hidden
+        display: none
+    .xs-centre
+        text-align: end
+    #xs-visible
+        display: block
+        margin-top: 10px
+        color: #ffffff
+        font-size: 14px
+        font-weight: 400
+        text-transform: uppercase
+        text-align: end
+    .row .subheader_btn
+        width: 175px
+        height: 40px
+        margin-top: 10px
+    .promo
+        &_header
+            font-size: 40px
+            line-height: 45px
+    .advantages
+        .row
+            .circle
+                margin: 15px auto 10px auto
+        .description
+            text-align: center
+    .footer
+        &_media
+            width: 135px
+            top: 95px
+            &_item
+                width: 23px
+                height: 23px
+        &_mobile
+            top: 100px
+            width: 160px
+            img
+                width: 50px
+                height: 17px
+@media (max-width: 575px)
+    nav
+        height: 32px
+    .nav
+        height: 32px
+    .hamburger
+        height: 10px
+        top: 15px
+    .subheader
+            height: 60px
+    .row
+        .subheader
+            height: 60px
+            &_official
+                display: none
+            &_logo
+                margin-top: 16px
+                img
+                    width: 130px
+            &_btn
+                margin-top: 6px
+                width: 110px
+                height: 22px
+                font-size: 8px
+    .promo
+        min-height: 400px
+        padding: 93px 0 35px 0
+        &_descr
+            display: none
+        &_header
+            font-size: 30px
+            padding: 0 24px
+            line-height: 35px
+        &_subheader
+            font-size: 20px
+            margin-top: 33px
+            line-height: 30px
+            padding: 0 10px
+        &_btn
+            width: 210px
+            height: 50px
+            margin-top: 72px
+    .menu
+        width: 85%
+        &_item
+            width: 100%
+            text-align: center
+            padding: 5px 0
+        &_link
+            display: block
+    .advantages
+        padding: 22px 0 36px 0
+        .title
+            font-size: 16px
+            line-height: 40px
+            margin-top: auto
+        .no_cash
+            .description
+                width: auto
+        .commission
+            .description
+                width: auto
+        .guaranteed
+            .description
+                width: auto
+        .schedule
+            .description
+                width: auto
+        .comfortable
+            .description
+                width: auto
+        .orders
+            .description
+                width: auto
+        .call
+            .description
+                width: auto
+        .no_posters
+            .description
+                width: auto
+    .mobile
+        .title
+            font-size: 18px
+    .uberX
+        padding: 57px 0 137.5px 0 
+        min-height: 393px
+        background: none
+        .black
+            height: 100%
+        .title
+            display: none
+        .subtitle
+            display: none
+        .subtext
+            position: absolute
+            left: 0
+            width: 100%
+            color: #ffff
+    .require
+        .title
+            font-size: 18px
+        &_descr
+            font-size: 15px
+    .map
+        .title
+            font-size: 18px
+    .footer
+        &_line
+            width: 250px
+        &_links
+            width: 250px
+            &_main
+                padding-top: 10px
+                a
+                    font-size: 11px
+            &_sub
+                a
+                    font-size: 8px
+        &_media
+            display: flex
+            position: absolute
+            justify-content: center
+            width: 100%
+            top: 90px
+            &_item
+                margin: auto 5px
+            
+        &_mobile
+            display: block
+            position: absolute
+            top: 125px
+            width: 100%
+            &_between
+                justify-content: center
+            img
+                width: 70px
+                height: 20px
+                margin: auto 5px
+
+    #xs-visible
+        margin-top: 11px
+        font-size: 12px
+        font-weight: 400
+        text-transform: uppercase
+
+
+            
+
+
+
+

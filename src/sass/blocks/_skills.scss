@@ -1,41 +1,6 @@
 .skill {
     min-height: 850px;
 
-    &__title {
-        position: relative;
-        font-size: 16px;
-        font-weight: 700;
-        text-align: center;
-        margin-bottom: 10px;
-
-        &::before {
-            content: '';
-            display: block;
-            width: 36px;
-            height: 36px;
-            border-radius: 100%;
-            background-color: $main-color;
-            position: absolute;
-            z-index: -1;
-            top: -6px;
-            left: 50%;
-            transform: translate(-50%);
-
-        }
-    }
-
-    &__subtitle {
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    &__line {
-        width: 60px;
-        height: 3px;
-        background-color: $main-color;
-        margin: 0 auto 70px auto;
-    }
-
     &__abilities {
         margin-top: 40px;
         display: grid;

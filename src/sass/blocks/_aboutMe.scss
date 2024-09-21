@@ -61,6 +61,7 @@
         font-weight: 700;
         margin-bottom: 10px;
         position: relative;
+        transform: translateX(10px);
 
         &::before {
             content: '';
