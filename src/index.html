@@ -70,11 +70,11 @@
             </div>
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__link"><a href="#">About myself </a></li>
-                    <li class="menu__link"><a href="#">My abilities</a></li>
-                    <li class="menu__link"><a href="#">My works</a></li>
-                    <li class="menu__link"><a href="#">Price-list</a></li>
-                    <li class="menu__link"><a href="#">Contacts</a></li>
+                    <li class="menu__link"><a href="#me">About myself </a></li>
+                    <li class="menu__link"><a href="#skills">My abilities</a></li>
+                    <li class="menu__link"><a href="#portfolio">My works</a></li>
+                    <li class="menu__link"><a href="#prices">Price-list</a></li>
+                    <li class="menu__link"><a href="#contacts">Contacts</a></li>
                 </ul>
             </nav>
             <div class="menu__social">
@@ -99,15 +99,15 @@
             <div class="promo__subtitle title__fs16">Vladyslav Hrynko</div>
             <h1 class="promo__title"><span>I’am web</span> - developer from Cambridge</h1>
             <div class="promo__btns">
-                <a href="" class="promo__btns--link button">Portfolio</a>
-                <a href="" class="promo__btns--link">About myself</a>
+                <a href="#portfolio" class="promo__btns--link button">Portfolio</a>
+                <a href="#me" class="promo__btns--link">About myself</a>
             </div>
         </div>
     </section>
 
     <div class="container">
 
-        <section class="aboutMe">
+        <section id="me" class="aboutMe">
             <div class="aboutMe__grid">
                 <img id="img" src="img/main_photo_sc1.png" alt="Vladyslav">
                 <div id="me" class="aboutMe__cont">
@@ -143,7 +143,7 @@
             </div>
         </section>
 
-        <section class="skill">
+        <section id="skills" class="skill">
             <div class="title__section-title">Skills</div>
             <div class="title__section-subtitle title">My knowledge and abilities</div>
             <div class="title__section-line"></div>
@@ -179,9 +179,7 @@
                         We won't
                         integrate it into the project unless necessary, but we have
                         the skill to work with it.</div>
-                </div>
-                <div style="border: none;" class="skill__abilities--card">
-                </div>
+                    </div>
 
                 <div class="skill__abilities--card">
                     <img src="icons/skills/react.svg" alt="React">
@@ -225,7 +223,7 @@
                         <div class="progress__line--2"></div>
                     </div>
                 </div>
-                <div class="progress__item">
+                <div id="portfolio" class="progress__item">
                     <div class="progress__title title__fs14">Design creation</div>
                     <div class="progress__numb title__fs14">70%</div>
                     <div class="progress__line--1">
@@ -247,7 +245,7 @@
                     <a href="#" class="portfolio__item"><img src="img/works/bread.jpg" alt="test"></a>
                     <a href="#" class="portfolio__item vertical"><img src="img/works/plans.jpg" alt="test"></a>
                     <a href="#" class="portfolio__item"><img src="img/works/ipad.jpg" alt="test"></a>
-                    <a href="#" class="portfolio__item horizontal"><img src="img/works/mac.jpg" alt="test"></a>
+                    <a id="prices" href="#" class="portfolio__item horizontal"><img src="img/works/mac.jpg" alt="test"></a>
                 </div>
             </div>
         </section>
@@ -276,7 +274,7 @@
             </div>
         </section>
 
-        <section class="contacts">
+        <section id="contacts" class="contacts">
             <div class="container">
                 <div class="contacts__wrapper">
                     <div class="contacts__photo"><img src="img/main_photo_sc2.png" alt="Vladyslav"></div>

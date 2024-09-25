@@ -14,6 +14,9 @@
         grid-template-areas:
             "img me"
             "img skills";
+            img{
+                object-fit: cover;
+            }
     }
 
     .skills {

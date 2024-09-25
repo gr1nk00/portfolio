@@ -1,5 +1,5 @@
 .promo {
-    min-height: 95vh;
+    min-height: 100vh;
     position: relative;
     background: url('../img/face_bc.jpg') no-repeat 50%/cover;
     // center center/cover no-repeat
@@ -24,7 +24,19 @@
         z-index: 1;
         color: #000;
         font-weight: 700;
-        @include before_circle;
+        &::before {
+            content: '';
+            display: block;
+            width: 36px;
+            height: 36px;
+            border-radius: 100%;
+            background-color: $main-color;
+            position: absolute;
+            z-index: -1;
+            top: -6px;
+            left: 0.3%;
+            transform: translate(-50%);
+        }
     }
 
     &__btns {

@@ -4,6 +4,7 @@ $(document).ready(function () {
         menu = document.querySelector('.menu'),
         close = document.querySelector('.menu__close'),
         menu__overlay = document.querySelector('.menu__overlay');
+        close_menu = document.querySelector('.menu__list')
 
     hamburger.addEventListener('click', () => {
         menu.classList.add('active');
@@ -14,6 +15,10 @@ $(document).ready(function () {
     })
 
     menu__overlay.addEventListener('click', () => {
+        menu.classList.remove('active');
+    });
+    
+    close_menu.addEventListener('click', () => {
         menu.classList.remove('active');
     });
 
