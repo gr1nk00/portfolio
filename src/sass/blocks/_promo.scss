@@ -3,7 +3,7 @@
     position: relative;
     background: url('../img/face_bc.jpg') no-repeat 50%/cover;
     // center center/cover no-repeat
-    padding-top: 400px;
+    padding-top: 65vh;
 
 
     &__title {
@@ -24,6 +24,7 @@
         z-index: 1;
         color: #000;
         font-weight: 700;
+
         &::before {
             content: '';
             display: block;

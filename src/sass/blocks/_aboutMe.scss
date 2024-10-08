@@ -1,11 +1,11 @@
 .aboutMe {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    min-height: 875px;
     padding-top: 185px;
     padding-bottom: 100px;
 
     &__grid {
-        max-height: 455px;
         display: grid;
         grid-template-columns: 400px 570px;
         grid-template-rows: repeat(2, minmax(245px, auto));
@@ -14,17 +14,18 @@
         grid-template-areas:
             "img me"
             "img skills";
-            img{
-                object-fit: cover;
-            }
+
+        #img {
+            object-fit: cover;
+        }
     }
 
     .skills {
         display: grid;
-        grid-template-columns: 260px, 260px;
+        grid-template-columns: 260px 260px;
         grid-template-rows: 115px;
         grid-template-areas:
-            "1 2";
+            "s1 s2";
         column-gap: 40px;
 
         &__title {
@@ -86,9 +87,6 @@
         margin-bottom: 20px;
     }
 
-    &__descr {
-        width: 570px;
-    }
 }
 
 #img {
