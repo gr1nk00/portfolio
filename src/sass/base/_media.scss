@@ -118,11 +118,12 @@
         &__photo {
             img {
                 width: 350px;
+                height: 537px;
             }
         }
 
         &__form {
-            margin-top: 23px;
+            margin-top: 35px;
             grid-template: 40px 150px 40px / repeat(2, 210px);
             row-gap: 20px;
         }
@@ -180,9 +181,10 @@
 
     .skill {
         &__abilities {
-            grid-template-columns: repeat(2, minmax(270px, auto));
+            grid-template-columns: repeat(2, 270px);
             grid-template-rows: repeat(3, minmax(270px, auto));
             column-gap: 15px;
+            justify-content: center;
         }
     }
 
@@ -199,9 +201,10 @@
     .portfolio {
         &__wrapper {
             display: grid;
-            grid-template: repeat(3, 280px) / repeat(2, 355px);
+            grid-template: repeat(3, 280px) / repeat(2, 280px);
             gap: 15px;
             justify-items: center;
+            justify-content: center;
 
             .vertical {
                 grid-row: 2/3;
@@ -227,10 +230,6 @@
 
     .price {
         min-height: 260px;
-
-        &__wrapper {
-            row-gap: 50px;
-        }
 
         &__container {
             width: 725px;
@@ -265,14 +264,188 @@
         &__photo {
             img {
                 width: 250px;
-                height: 523px;
+                height: 535px;
             }
         }
 
         &__form {
-            margin-top: 23px;
+            margin-top: 35px;
             grid-template: 40px 150px 40px / repeat(2, 210px);
             row-gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 380px;
+    }
+
+    .promo {
+        padding-top: 55vh;
+
+        &__title {
+            font-size: 26px;
+            width: 350px;
+            line-height: 26px;
+        }
+    }
+
+    .aboutMe {
+        padding: 40px 0 0 0;
+
+        &__grid {
+            grid-template-columns: 380px;
+            grid-template-rows: repeat(3, minmax(300px, auto));
+            grid-template-areas:
+                "img"
+                "me"
+                "skills";
+            row-gap: 40px;
+
+            #img {
+                display: block;
+                width: 380px;
+                height: 420px;
+            }
+
+            .skills {
+                grid-template-columns: 260px;
+                grid-template-rows: 115px 115px;
+                grid-template-areas:
+                    "s1"
+                    "s2";
+                column-gap: 40px;
+            }
+
+            #s1 {
+                grid-row: 1 / 2;
+                grid-column: 1 / 2;
+            }
+
+            #s2 {
+                grid-row: 2 / 3;
+                grid-column: 1 / 2;
+            }
+
+        }
+
+        &__title {
+            font-size: 16px;
+        }
+
+        &__subtitle {
+            font-size: 24px;
+        }
+    }
+
+    .skill {
+
+        &__abilities {
+            grid-template-columns: 270px;
+            grid-template-rows: repeat(6, minmax(270px, auto));
+        }
+
+        .title__section-subtitle {
+            font-size: 24px;
+            line-height: 24px;
+        }
+    }
+
+    .portfolio {
+        &__wrapper {
+            display: grid;
+            grid-template: repeat(6, 280px) / repeat(1, 280px);
+            gap: 15px;
+
+            .vertical {
+                grid-row: 5/6;
+                grid-column: 1/2;
+            }
+
+            .horizontal {
+                grid-column: 1/2;
+            }
+        }
+    }
+
+    .price {
+        min-height: 260px;
+
+        &__container {
+            width: 400px;
+        }
+
+        &__wrapper {
+            display: grid;
+            grid-template: repeat(3, 45px) / 236px;
+            row-gap: 50px;
+            justify-content: center;
+        }
+
+        .center {
+            grid-column: 1 / 2;
+        }
+
+        .right {
+            width: 236px;
+            grid-column: 1 / 2
+        }
+
+        .lower {
+            width: 236px;
+            grid-column: 1 / 2
+        }
+
+    }
+
+    .contacts {
+        min-width: 0px;
+
+        .container {
+            width: 375px;
+        }
+
+        &__wrapper {
+            display: block;
+        }
+
+        &__title {
+            font-size: 16px;
+        }
+
+        .title {
+            font-size: 24px;
+        }
+
+        &__photo {
+            img {
+                display: none;
+            }
+        }
+
+        &__form {
+            margin-top: 35px;
+            grid-template: 40px 40px 150px 40px / 375px;
+            row-gap: 35px;
+
+            .name {
+                grid-row: 1 / 2;
+            }
+
+            .email {
+                grid-row: 2 / 3;
+            }
+
+            .textarea {
+                grid-column: 1 / 2;
+                grid-row: 3 / 4;
+            }
+
+            .button {
+                grid-row: 4 / 5;
+                justify-self: center;
+            }
         }
     }
 }
