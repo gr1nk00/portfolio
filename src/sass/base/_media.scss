@@ -24,7 +24,6 @@
         }
 
         .skills {
-            display: grid;
             grid-template-columns: 200px 200px;
             grid-template-rows: 115px 115px;
             column-gap: 40px;
@@ -57,12 +56,9 @@
 
     .portfolio {
         &__wrapper {
-            display: grid;
             grid-template: repeat(3, 280px) / repeat(3, 280px);
-            gap: 5px;
 
             .vertical {
-                grid-row: 1/3;
                 grid-column: 3/4;
             }
 
@@ -90,7 +86,6 @@
         }
 
         &__wrapper {
-            display: grid;
             grid-template: repeat(3, 45px) / repeat(3, 245px);
             row-gap: 50px;
         }
@@ -98,19 +93,16 @@
         .right {
             grid-row: 2 / 3;
             grid-column: 2 / 3;
-            width: 310px;
         }
 
         .lower {
             grid-row: 3 / 4;
             grid-column: 3 / 4;
-            width: 357px;
         }
     }
 
     .contacts {
         &__wrapper {
-            display: grid;
             grid-template: repeat(1, 1fr) / 350px 450px;
             column-gap: 50px;
         }
@@ -138,7 +130,6 @@
     .menu {
         &__block {
             width: 260px;
-            height: 100vh;
             padding-top: 120px;
             padding-left: 30px;
         }
@@ -183,7 +174,6 @@
         &__abilities {
             grid-template-columns: repeat(2, 270px);
             grid-template-rows: repeat(3, minmax(270px, auto));
-            column-gap: 15px;
             justify-content: center;
         }
     }
@@ -200,7 +190,6 @@
 
     .portfolio {
         &__wrapper {
-            display: grid;
             grid-template: repeat(3, 280px) / repeat(2, 280px);
             gap: 15px;
             justify-items: center;
@@ -221,7 +210,6 @@
                 grid-column: 2/3;
 
                 img {
-                    object-fit: cover;
                     width: 280px;
                 }
             }
@@ -236,16 +224,10 @@
         }
 
         &__wrapper {
-            display: grid;
             grid-template: repeat(3, 45px) / repeat(3, 200px);
-            row-gap: 50px;
         }
 
         .center {
-            grid-column: 2 / 3;
-        }
-
-        .right {
             grid-column: 2 / 3;
         }
 
@@ -256,7 +238,6 @@
 
     .contacts {
         &__wrapper {
-            display: grid;
             grid-template: repeat(1, 1fr) / 250px 450px;
             column-gap: 25px;
         }
@@ -266,12 +247,6 @@
                 width: 250px;
                 height: 535px;
             }
-        }
-
-        &__form {
-            margin-top: 35px;
-            grid-template: 40px 150px 40px / repeat(2, 210px);
-            row-gap: 20px;
         }
     }
 }
@@ -288,6 +263,10 @@
             font-size: 26px;
             width: 350px;
             line-height: 26px;
+        }
+
+        &__hamburger {
+            right: 20px;
         }
     }
 
@@ -354,9 +333,7 @@
 
     .portfolio {
         &__wrapper {
-            display: grid;
             grid-template: repeat(6, 280px) / repeat(1, 280px);
-            gap: 15px;
 
             .vertical {
                 grid-row: 5/6;
@@ -370,14 +347,11 @@
     }
 
     .price {
-        min-height: 260px;
-
         &__container {
             width: 400px;
         }
 
         &__wrapper {
-            display: grid;
             grid-template: repeat(3, 45px) / 236px;
             row-gap: 50px;
             justify-content: center;
@@ -446,6 +420,103 @@
                 grid-row: 4 / 5;
                 justify-self: center;
             }
+        }
+    }
+}
+
+@media (max-width: 424px) {
+    .container {
+        width: 330px;
+    }
+
+    .promo {
+        &__btns {
+            width: 220px;
+        }
+    }
+
+    .aboutMe {
+
+        &__grid {
+            grid-template-columns: 330px;
+
+            #img {
+                width: 330px;
+                height: 400px;
+            }
+        }
+    }
+
+    .price {
+        &__container {
+            width: 330px;
+        }
+    }
+
+    .contacts {
+
+        .container {
+            width: 330px;
+        }
+
+        &__form {
+            margin-top: 35px;
+            grid-template: 40px 40px 150px 40px / 330px;
+            row-gap: 35px;
+        }
+    }
+}
+
+@media (max-width: 374px) {
+    .container {
+        width: 275px;
+    }
+
+    .promo {
+        &__title {
+            width: 290px;
+        }
+    }
+
+    .aboutMe {
+
+        &__grid {
+            grid-template-columns: 275px;
+
+            #img {
+                width: 275px;
+                height: 375px;
+            }
+        }
+    }
+
+    .progress {
+        &__wrapper {
+            grid-template-columns: 275px;
+        }
+
+        &__line--1 {
+            width: 275px;
+        }
+
+    }
+
+    .price {
+        &__container {
+            width: 275px;
+        }
+    }
+
+    .contacts {
+
+        .container {
+            width: 275px;
+        }
+
+        &__form {
+            margin-top: 35px;
+            grid-template: 40px 40px 150px 40px / 275px;
+            row-gap: 35px;
         }
     }
 }
