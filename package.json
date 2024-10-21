@@ -23,5 +23,8 @@
 		"last 2 chrome versions",
 		"last 2 firefox versions",
 		"last 2 ios versions"
-	]
+	],
+	"dependencies": {
+		"animate.css": "^4.1.1"
+	}
 }

@@ -1,6 +1,6 @@
 @media (max-width: 1399px) {
     .sidepanel {
-        left: -75px;
+        left: -100px;
     }
 }
 
@@ -295,6 +295,10 @@
                     "s1"
                     "s2";
                 column-gap: 40px;
+
+                &__descr {
+                    width: 300px;
+                }
             }
 
             #s1 {
@@ -443,6 +447,12 @@
             #img {
                 width: 330px;
                 height: 400px;
+            }
+        }
+
+        .skills {
+            &__descr {
+                width: 205px;
             }
         }
     }

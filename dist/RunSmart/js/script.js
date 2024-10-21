@@ -4,8 +4,8 @@ $(document).ready(function () {
         speed: 1000,
         autoplay: false,
         autoplaySpeed: 5500,
-        prevArrow: '<button type="button" class="slick-prev"><img alt="prev" src="/icons/left-solid.png"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img alt="next" src="/icons/right-solid.png"></button>',
+        prevArrow: '<button type="button" class="slick-prev"><img alt="prev" src="/RunSmart/icons/left-solid.png"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img alt="next" src="/RunSmart/icons/right-solid.png"></button>',
         responsive: [
             {
                 breakpoint: 768,
